@@ -1,12 +1,12 @@
-# IoSI-CP:Rethinking Collaborative Perception from the Spatial-Temporal Importance of Semantic Information
+# Select2Col: Leveraging Spatial-Temporal Importance of Semantic Information for Efficient Collaborative Perception
 This is the official implementation of paper "Rethinking Collaborative Perception from the Spatial-Temporal Importance of Semantic Information".
 
  Zhejiang University, Zhejiang Lab
 
 ## Main idea
-**Abstract:**  Collaboration through the sharing of semantic information is a crucial enabler for enhancing perception capabilities. However, existing collaborative perception methods tend to focus solely on the spatial features of semantic information, while neglecting the importance of temporal dimension in collaborator selection and semantic information fusion, thus incurring performance degradation. In this article, we propose a novel collaborative perception framework, IoSI-CP, which takes into account the importance of semantic information (IoSI) from both temporal and spatial dimensions. Specifically, we develop an IoSI-based collaborator selection method that effectively identifies advantageous collaborators while excluding those that bring negative benefits. Moreover, we present a semantic information fusion algorithm called HPHA (Historical Prior Hybrid Attention), which integrates a multi-scale transformer module and a short-term attention module to capture IoSI from spatial and temporal dimensions and assign varying weights for efficient aggregation.
+**Abstract:**  Collaboration by leveraging the shared semantic information plays a crucial role in overcoming the perception capability limitations of isolated agents. However, existing collaborative perception methods tend to focus solely on the spatial features of semantic information, while neglecting the importance of the temporal dimension. Consequently, the potential benefits of collaboration remain underutilized. In this article, we propose Select2Col, a novel collaborative perception framework that takes into account the spatial-temporal importance of semantic information. Within the Select2Col, we develop a collaborator selection method that utilizes a lightweight graph neural network (GNN) to estimate the importance of semantic information (IoSI) in enhancing perception performance, thereby identifying advantageous collaborators while excluding those that bring negative impact. Moreover, we present a semantic information fusion algorithm called HPHA (historical prior hybrid attention), which integrates multi-scale attention and short-term attention modules to capture the IoSI in feature representation from the spatial and temporal dimensions respectively, and assigns IoSI-consistent weights for efficient information fusion. Extensive experiments on two open datasets demonstrate that our proposed Select2Col significantly improves the perception performance compared to state-of-the-art approaches. The code associated with this research is publicly available at https://github.com/huangqzj/Select2Col.
 
-![IoSI-CP](./images/IoSICP.png)
+![Select2Col](./images/Select2Col.png)
 
 ## Features
 
@@ -27,9 +27,9 @@ This is the official implementation of paper "Rethinking Collaborative Perceptio
 If you find this code useful in your research then please cite
 
 ```
-@inproceedings{IoSI-CP,
+@inproceedings{Select2Col,
   author    = {Yuntao Liu, Qian Huang, Rongpeng Li, Xianfu Chen, Zhifeng Zhao, Shuyuan Zhao, Yongdong Zhu and Honggang Zhang},
-  title     = {Rethinking Collaborative Perception from the Spatial-Temporal Importance of Semantic Information},
+  title     = {Select2Col: Leveraging Spatial-Temporal Importance of Semantic Information for Efficient Collaborative Perception},
   month     = {May},  
   year      = {2023}
 }
@@ -39,14 +39,14 @@ If you find this code useful in your research then please cite
 ### Install
 ```bash
 # Clone repo
-git clone https://github.com/huangqzj/IoSI-CP
+git clone https://github.com/huangqzj/Select2Col
 
-cd IoSI-CP
+cd Select2Col
 
 # Setup conda environment
-conda create -y --name IoSI-CP python=3.8
+conda create -y --name Select2Col python=3.8
 
-conda activate IoSI-CP
+conda activate Select2Col
 # Please install pytorch >= 1.8.1, newest version can work well
 conda install -y pytorch==1.9.1 torchvision cudatoolkit=11.1 -c pytorch
 # spconv 2.0 install, choose the correct cuda version of yourself
@@ -86,7 +86,7 @@ Of course, you can also directly download the whole zip file, e.g. train.zip
 After downloading is finished, please make the file structured as following:
 
 ```sh
-IoSI-CP # root of IoSI-CP
+Select2Col # root of Select2Col
 ├── v2xset # the downloaded v2xset data
 │   ├── train
 │   ├── validate
@@ -95,7 +95,7 @@ IoSI-CP # root of IoSI-CP
 │   ├── train
 │   ├── validate
 │   ├── test
-├── IoSI-CP # the core codebase
+├── Select2Col # the core codebase
 
 ```
 

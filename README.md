@@ -58,7 +58,7 @@ pip install -r requirements.txt
 python opencood/utils/setup.py build_ext --inplace
 python opencood/pcdet_utils/setup.py build_ext --inplace
 
-# install IoSI-CP into the environment
+# install Select2Col into the environment
 python setup.py develop
 ```
 
@@ -106,7 +106,7 @@ Our code is developed based on [OpenCOOD](https://github.com/DerrickXuNu/OpenCOO
 python opencood/tools/train.py --hypes_yaml ${CONFIG_FILE} [--model_dir  ${CHECKPOINT_FOLDER}]
 ```
 Arguments Explanation:
-- `hypes_yaml`: the path of the training configuration file, e.g. `opencood/hypes_yaml/point_pillar_IoSICP.yaml`, meaning you want to train
+- `hypes_yaml`: the path of the training configuration file, e.g. `opencood/hypes_yaml/point_pillar_Select2Col.yaml`, meaning you want to train
 an intermediate fusion model which utilizes point_pillar as the backbone. See [Tutorial 1: Config System](https://opencood.readthedocs.io/en/latest/md_files/config_tutorial.html) to learn more about the rules of the yaml files.
 - `model_dir` (optional) : the path of the checkpoints. This is used to only when you want to fine-tune the trained models or continue training. If train your own model from scratch,this arguments is not necessary. 
 

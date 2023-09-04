@@ -20,7 +20,7 @@ setup(
     name='Select2Col',
     version=__version__,
     packages=find_packages(),
-    url='https://github.com/huangqzj/IoSI-CP.git',
+    url='https://github.com/huangqzj/Select2Col.git',
     license='ZHEJIANG LAB',
     author='Qian Huang, Yuntao Liu',
     author_email='huangq@zhejianglab.com',

@@ -1,4 +1,4 @@
-# Select2Col: Leveraging Spatial-Temporal Importance of Semantic Information for Efficient Collaborative Perception
+## Select2Col: Leveraging Spatial-Temporal Importance of Semantic Information for Efficient Collaborative Perception
 This is the official implementation of paper "Select2Col: Leveraging Spatial-Temporal Importance of Semantic Information for Efficient Collaborative Perception".
 
  Zhejiang University, Zhejiang Lab

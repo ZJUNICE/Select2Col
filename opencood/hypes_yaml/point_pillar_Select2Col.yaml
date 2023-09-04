@@ -4,12 +4,10 @@
 # License: TDG-Attribution-NonCommercial-NoDistribs
 
 name: point_pillar_Select2Col
-root_dir: '../../datasets/V2XSet/train'
-#validate_dir: '../datasets/V2XSet/validate'
-validate_dir: '../../datasets/V2XSet/test'
+root_dir: '../datasets/V2XSet/train'
+validate_dir: '../datasets/V2XSet/validate'
 #root_dir: '../datasets/opv2v_data_dumping/train'
 #validate_dir: '../datasets/opv2v_data_dumping/validate'
-#validate_dir: '../datasets/opv2v_data_dumping/test'
 
 wild_setting:
   seed: 20
